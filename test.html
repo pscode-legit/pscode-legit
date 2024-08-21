@@ -1,1 +1,1582 @@
 
+<style>
+        .yettel-site main:not(.edit-mode) section>div.row>div.col-lg-12>div.yettel-custom-code {
+            padding: 0;
+            margin: 0 auto;
+        }
+
+        #iframeId_16971180785 [data-dot-object="contentlet"] {
+            margin: 0 !important;
+
+        }
+
+        .yettel-site .yettel-header__container {
+            padding: 0 24px 16px;
+
+        }
+
+        div.cube-banner * {
+            box-sizing: border-box;
+
+        }
+
+        div.cube-banner-inf-box h1.top-head-sw,
+        div.cube-banner-inf-box p {
+            margin: 0;
+        }
+
+        /*cube slideshow*/
+        #cubeRoof {
+            position: relative;
+        }
+
+        #cubeRoof img {
+            position: absolute;
+            top: 5%;
+            display: block;
+            margin: 0 auto;
+            opacity: 0;
+            /* width: 80%; */
+
+            transition: opacity 1s ease-in-out;
+            filter: brightness(100%);
+        }
+
+        #cubeRoof img.active {
+            opacity: 1;
+        }
+
+        /*slideshow*/
+        h1.page-header,
+        #business-clients h2.page-header,
+        .breadcrumb {
+            display: none;
+        }
+
+        .header-wrapper {
+            border: none;
+            border-radius: 0;
+        }
+
+        .navigation {
+            width: 100%;
+            border-radius: 0;
+            border: none;
+        }
+
+        div.inside-cont * {
+            box-sizing: border-box;
+            transition-duration: 400ms;
+            transition-timing-function: ease-in-out;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .row {
+            margin: 0 0 0 0;
+        }
+
+        div.inside-cont h1,
+        div.inside-cont h2,
+        div.inside-cont h3.tab-head,
+        div.inside-cont h3.hbo-right-head,
+        div.inside-cont h4,
+        div.inside-cont span,
+        div.inside-cont p {
+            color: #002340;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .centered {
+            text-align: center;
+
+        }
+
+        .m-zero {
+            margin: 0 0 0 0;
+        }
+
+        .container-fluid {
+            max-width: none;
+            padding: 0;
+        }
+
+        div.inside-cont {
+            max-width: 1280px;
+            margin: 0 auto 6vh;
+            /* gap: 6vh; */
+        }
+
+        .f-ctnr-col {
+            display: flex;
+        }
+
+        .f-ctnr {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .f-col {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .f-col-start {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .o-sxtn {
+            padding: 0 16px;
+        }
+
+        div.inside-cont h1 {
+            font-size: 40px;
+            line-height: 46px;
+            font-family: 'yettel-regular';
+
+        }
+
+        div.inside-cont h2 {
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+        div.inside-cont h3.tab-head,
+        div.inside-cont h3.hbo-right-head {
+            font-size: 24px;
+            line-height: 32px;
+            margin: 0 0 0 0;
+        }
+
+        div.inside-cont h4 {
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        div.inside-cont p {
+            font-size: 16px;
+            line-height: 22px;
+            font-family: 'yettel-regular';
+            font-weight: 100;
+        }
+
+        div.inside-cont h2,
+        div.inside-cont h3.tab-head,
+        div.inside-cont h3.hbo-right-head,
+        div.inside-cont h4 {
+            font-weight: 600;
+            font-family: 'yettel-regular';
+        }
+
+        .bm-16 {
+            margin: 0 0 16px 0;
+        }
+
+        .bm-24 {
+            margin: 0 0 24px 0;
+        }
+
+        .bm-50 {
+            margin: 0 0 50px 0;
+        }
+
+        .bm-6 {
+            margin: 0 0 6vh 0;
+        }
+
+        div.intro-ctnr {
+            gap: 24px;
+            margin: 0 0 36px 0;
+        }
+
+        /* Style the tab */
+        .tab {
+            overflow: hidden;
+
+            background-color: #f1f1f1;
+        }
+
+        div.sw-tab {
+            width: 100%;
+        }
+
+        /* Style the buttons inside the tab */
+        .sw-tab button.tablinks-sw {
+            background-color: inherit;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 12px;
+            width: 100%;
+            font-size: 18px;
+            gap: 6px;
+            font-family: 'yettel-regular';
+
+            border: 1px solid #002340;
+            border-right: none;
+        }
+
+
+
+        /* Change background color of buttons on hover */
+        .sw-tab button.tablinks-sw:hover {
+            background-color: #ddd;
+        }
+
+
+
+        div#hbo-sw h3,
+        div#hbo-sw p,
+        div#hbo-sw a,
+        div#stt-sw h3,
+        div#stt-sw p,
+        div#stt-sw a,
+        div#stt-sw h4,
+        div#capTelco-sw h3,
+        div#capTelco-sw p,
+        div#capTelco-sw a,
+        .sw-tab button.tablinks-sw.cap-but.active,
+        .sw-tab button.tablinks-sw.cap-but:hover,
+        .sw-tab button.tablinks-sw.cap-but:focus,
+        .sw-tab button.tablinks-sw.cap-but:active,
+        .sw-tab button.tablinks-sw.bookmate-but:hover,
+        .sw-tab button.tablinks-sw.bookmate-but:focus,
+        .sw-tab button.tablinks-sw.bookmate-but:active,
+        .sw-tab button.tablinks-sw.bookmate-but.active,
+        .sw-tab button.tablinks-sw:hover,
+        .sw-tab button.tablinks-sw:focus,
+        .sw-tab button.tablinks-sw:active,
+        .sw-tab button.tablinks-sw.active {
+            color: #fff;
+            margin: 0 0 0 0;
+        }
+
+        /* Create an active/current tablink class */
+        .sw-tab button.tablinks-sw.active {
+            background-color: #ccc;
+        }
+
+        div#stt-sw,
+        .sw-tab button.tablinks-sw.stt-but:hover,
+        .sw-tab button.tablinks-sw.stt-but:focus,
+        .sw-tab button.tablinks-sw.stt-but:active,
+        .sw-tab button.tablinks-sw.stt-but.active,
+        div#hbo-sw,
+        .sw-tab button.tablinks-sw.hbo-but:hover,
+        .sw-tab button.tablinks-sw.hbo-but:focus,
+        .sw-tab button.tablinks-sw.hbo-but:active,
+        .sw-tab button.tablinks-sw.hbo-but.active,
+        div#deezer-sw,
+        .sw-tab button.tablinks-sw.deezer-but:hover,
+        .sw-tab button.tablinks-sw.deezer-but:focus,
+        .sw-tab button.tablinks-sw.deezer-but:active,
+        .sw-tab button.tablinks-sw.deezer-but.active,
+        div#bookmate-sw,
+        .sw-tab button.tablinks-sw.bookmate-but:hover,
+        .sw-tab button.tablinks-sw.bookmate-but:focus,
+        .sw-tab button.tablinks-sw.bookmate-but:active,
+        .sw-tab button.tablinks-sw.bookmate-but.active,
+        div#capTelco-sw,
+        .sw-tab button.tablinks-sw.cap-but:hover,
+        .sw-tab button.tablinks-sw.cap-but:focus,
+        .sw-tab button.tablinks-sw.cap-but:active,
+        .sw-tab button.tablinks-sw.cap-but.active {
+            transition: background-image 700ms ease-out, background-color 700ms ease-in, opacity 400ms ease-in, color 400ms ease-in;
+        }
+
+        div#deezer-sw h3,
+        div#deezer-sw p,
+        div#deezer-sw a {
+            color: #002340;
+        }
+
+        div#hbo-sw h3,
+        div#hbo-sw p,
+        div#capTelco-sw h3,
+        div#capTelco-sw p,
+        div#capTelco-sw a,
+        div#hbo-sw ul.tc-box-list li {
+            color: #fff;
+        }
+
+
+
+        div#hbo-sw,
+        div#stt-sw,
+        div#capTelco-sw,
+        .sw-tab button.tablinks-sw.cap-but:hover,
+        .sw-tab button.tablinks-sw.cap-but:focus,
+        .sw-tab button.tablinks-sw.cap-but:active,
+        .sw-tab button.tablinks-sw.cap-but.active,
+        .sw-tab button.tablinks-sw:hover,
+        .sw-tab button.tablinks-sw:focus,
+        .sw-tab button.tablinks-sw:active,
+        .sw-tab button.tablinks-sw.active {
+            background-image: url('https://www.yettel.bg/sites/default/files/hbo-bg-vol1.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background: #002340;
+            /* background: conic-gradient(from 170.37deg at 36.11% 18.1%, #421265 -35.62deg, #25093C 34.88deg, #741FB4 86.25deg, #340B84 125.63deg, #480DE2 179.18deg, #360B90 238.39deg, #7722B6 285.08deg, #421265 324.38deg, #25093C 394.88deg); */
+
+        }
+
+        /* div#deezer-sw {
+            background-image: linear-gradient(69.06deg, #b84fdd -26.76%, #4965f4 44.6%, #2efb74 132.54%); 
+            background: #c9dfe4;
+    
+        }*/
+
+        .sw-tab button.tablinks-sw.deezer-but:hover,
+        .sw-tab button.tablinks-sw.deezer-but:focus,
+        .sw-tab button.tablinks-sw.deezer-but:active,
+        .sw-tab button.tablinks-sw.deezer-but.active,
+        div#deezer-sw,
+        .sw-tab button.tablinks-sw.bookmate-but:hover,
+        .sw-tab button.tablinks-sw.bookmate-but:focus,
+        .sw-tab button.tablinks-sw.bookmate-but:active,
+        .sw-tab button.tablinks-sw.bookmate-but.active,
+        .sw-tab button.tablinks-sw.izzi-but:hover,
+        .sw-tab button.tablinks-sw.izzi-but:focus,
+        .sw-tab button.tablinks-sw.izzi-but:active,
+        .sw-tab button.tablinks-sw.izzi-but.active {
+            background: #c4dfe9;
+            color: #002340;
+        }
+
+        div#bookmate-sw,
+        div#izzi-sw {
+            background-color: #C9DFE4;
+        }
+
+
+        .sw-tab button.tablinks-sw.cap-but:hover img.ds-logo.k-telco-logo,
+        .sw-tab button.tablinks-sw.cap-but:focus img.ds-logo.k-telco-logo,
+        .sw-tab button.tablinks-sw.cap-but:active img.ds-logo.k-telco-logo,
+        .sw-tab button.tablinks-sw.cap-but.active img.ds-logo.k-telco-logo,
+        .sw-tab button.tablinks-sw.hbo-but:hover img.ds-logo,
+        .sw-tab button.tablinks-sw.hbo-but:focus img.ds-logo,
+        .sw-tab button.tablinks-sw.hbo-but:active img.ds-logo,
+        .sw-tab button.tablinks-sw.hbo-but.active img.ds-logo {
+            filter: brightness(0) invert(1);
+        }
+
+        /* .sw-tab button.tablinks-sw.deezer-but.active img.ds-logo.deezer-logo-img,
+        .sw-tab button.tablinks-sw.deezer-but:active img.ds-logo.deezer-logo-img,
+        .sw-tab button.tablinks-sw.deezer-but:hover img.ds-logo.deezer-logo-img {
+            filter: invert(1);
+        } */
+
+
+
+        div#hbo-sw h3.hbo-right-head {
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        div.tab-ctnr {
+            width: 100%;
+            position: relative;
+            height: auto;
+
+        }
+
+        /* Style the tab content */
+        div.tabcontent-sw {
+
+            padding: 16px;
+
+            align-items: flex-start;
+            gap: 24px;
+            /* position: absolute; */
+            top: 0;
+            left: 0;
+            width: 100%;
+            transition: background-image 400ms ease-out;
+            position: relative;
+            height: auto;
+        }
+
+        img.ds-logo {
+            display: block;
+            max-width: 100%;
+            max-height: 16px;
+        }
+
+        div#deezer-sw,
+        div#bookmate-sw,
+        div#capTelco-sw {
+            top: 0;
+        }
+
+
+        div#bookmate-sw {
+            /* top: -240px; */
+        }
+
+        div#capTelco-sw {
+            /* top: -360px; */
+        }
+
+        div.tab-info {
+            gap: 12px;
+        }
+
+        div.tc-box {
+            gap: 12px;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+        img.tc-img {
+            display: block;
+            /* width: 100%; */
+            height: 180px;
+        }
+
+        div#bookmate-sw>div.props-ctnr>div.tc-ctnr>div.tc-sug-ctnr>div.tc-box>img.tc-img {
+            width: auto;
+            height: 200px;
+            /* margin: 0 auto; */
+        }
+
+
+
+        div#capTelco-sw>div.props-ctnr>div.tc-ctnr>div.tc-sug-ctnr {
+            width: 100%;
+        }
+
+        div#capTelco-sw img.tc-img {
+            max-width: 100%;
+
+            height: 120px;
+        }
+
+        div#capTelco-sw div.tc-box {
+            gap: 24px;
+        }
+
+        div#bookmate-sw>div.props-ctnr>div.tc-ctnr>div.tc-sug-ctnr>div.tc-box>div.tc-info-box>a>h4.tc-par,
+        div#bookmate-sw>div.props-ctnr>div.tc-ctnr>div.tc-sug-ctnr>div.tc-box>div.tc-info-box>a {
+            /* text-align: center; */
+            color: #002340;
+        }
+
+        div#bookmate-sw>div.props-ctnr>div.tc-ctnr>div.tc-sug-ctnr>div.div.tc-box {
+            align-items: center;
+            justify-content: center;
+        }
+
+        h4.new-suggestions,
+
+        div#capTelco-sw h4.tc-par,
+        div#hbo-sw h4.tc-par {
+            color: #fff;
+        }
+
+        h4.tc-par {
+            font-size: 18px;
+            line-height: 22px;
+            /* height: 45px; */
+        }
+
+        div.props-ctnr,
+        div.tc-sug-ctnr,
+        div.tc-ctnr {
+            gap: 24px;
+        }
+
+        div.tc-ctnr {
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
+        }
+
+
+        div.tc-sug-ctnr {
+            width: 80%;
+        }
+
+        div.tc-how-to-ctnr {
+            width: 30%;
+            gap: 24px;
+            border: 2px solid #fff;
+            padding: 16px;
+
+        }
+
+        div#bookmate-sw>div.props-ctnr>div.tc-ctnr>div.tc-how-to-ctnr,
+        div#deezer-sw div.tc-how-to-ctnr,
+        div#izzi-sw div.tc-how-to-ctnr {
+            border: 2px solid #002340;
+            padding: 16px;
+        }
+
+        button.activate-now {
+            padding: 8px 16px;
+            font-size: 16px;
+            background-color: #002340;
+            border-radius: 24px;
+            font-family: 'yettel-regular';
+            cursor: pointer;
+            font-weight: 600;
+            border: none;
+            color: #fff;
+        }
+
+        div#hbo-sw button.activate-now,
+        div#capTelco-sw button.activate-now,
+        div#stt-sw button.activate-now {
+            background-color: #B4FF00;
+            color: #002340;
+        }
+
+        div#bookmate-sw a,
+        div#bookmate-sw>div.props-ctnr h4.new-suggestions,
+        div#bookmate-sw>div.props-ctnr>div.tc-ctnr>div.tc-sug-ctnr>div.tc-box>a>h4.tc-par,
+        div#bookmate-sw>div.props-ctnr>div.tc-ctnr>div.tc-sug-ctnr>div.tc-box>a {
+            color: #002340;
+        }
+
+        h3.tab-head.inth {
+            display: none;
+        }
+
+
+
+        div#capTelco-sw>div.props-ctnr>div.tc-how-to-ctnr {
+            border: 1px solid #fff;
+            padding: 16px;
+            width: 50%;
+        }
+
+        /* CUBE + BANNER CSS*/
+        div.cube-banner {
+            position: relative;
+            gap: 1%;
+            margin: 0 0 6vh 0;
+            background-color: #b4ff00;
+            padding: 32px 16px;
+            align-items: center;
+            justify-content: center;
+            min-height: 450px;
+        }
+
+
+        div.cube-banner p {
+            font-size: 20px;
+            line-height: 24px;
+            font-family: 'yettel-light';
+
+
+
+        }
+
+        div.cube-banner-info-ctnr {
+            width: 60%;
+            gap: 24px;
+        }
+
+        div.cube-banner-inf-box {
+            gap: 24px;
+        }
+
+        div.yettel-cube-ctnr div.yettel-cube,
+        div.yettel-cube-ctnr {
+            transform-style: preserve-3d;
+        }
+
+        img.yl-img {
+            width: 100%;
+        }
+
+        div.yettel-cube>div:nth-child(4)>img.cube-img {
+            filter: brightness(0) invert(1);
+        }
+
+        div.yettel-cube-ctnr {
+            top: 0;
+            right: 0;
+            position: relative;
+            height: 150px;
+            width: 150px;
+            transform: rotateX(-30deg);
+            animation: animate 4s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: rotateX(-30deg) rotateY(0deg);
+            }
+
+            100% {
+                transform: rotateX(-30deg) rotateY(360deg);
+            }
+        }
+
+        div.yettel-cube-ctnr div.yettel-cube div,
+        div.yettel-cube-ctnr div.yettel-cube {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+        div.yettel-cube-ctnr div.yettel-cube div {
+            /* background-image: linear-gradient(to bottom, rgb(180, 255, 0) 70%, rgb(0, 35, 64) 30%); */
+            /* background-color: #b4ff00; */
+            transform: rotate(calc(90deg*var(--i))) translateZ(75px);
+            /*200px/2=150px*/
+        }
+
+        div.yettel-cube-ctnr div.yettel-cube div:nth-child(2) {
+            transform: rotate(calc(360deg*var(--i))) translateZ(-75px);
+        }
+
+        div.yettel-cube-ctnr div.yettel-cube div:nth-child(3) {
+            transform: rotateY(90deg) translateZ(75px);
+        }
+
+        div.yettel-cube-ctnr div.yettel-cube div:nth-child(4) {
+            transform: rotateY(90deg) translateZ(-75px);
+        }
+
+        div.yettel-cube-ctnr div.yettel-cube div:nth-child(1) {
+            background: radial-gradient(73% 73% at 50% 50%, #03F 22.05%, #006 82.57%);
+        }
+
+        div.yettel-cube-ctnr div.yettel-cube div:nth-child(2) {
+            background-color: #4570E3;
+        }
+
+        div.yettel-cube-ctnr div.yettel-cube div:nth-child(3) {
+            background-color: #C9DFE4;
+        }
+
+        div.yettel-cube-ctnr div.yettel-cube div:nth-child(4) {
+            background-color: #000;
+        }
+
+        div.top-cube {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 150px;
+            height: 150px;
+            background-color: #fff;
+            transform: rotateX(90deg) translateZ(75px);
+            gap: 12px;
+            padding: 8px;
+        }
+
+        /* div.top-cube::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 200px;
+            width: 200px;
+            background-color: #b4ff00;
+             transform: translateZ(-400px); 
+            filter: blur(20px);
+            box-shadow: rgb(0, 255, 0, 0.2);
+        } */
+
+        div.cube-shadow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #002340;
+            filter: blur(48px);
+            height: 150px;
+            width: 150px;
+            transform: rotateX(90deg) translateZ(-120px);
+
+        }
+
+        h2.yl-head {
+            color: #B4FF00;
+            font-size: 24px;
+            line-height: 24px;
+        }
+
+        img.cube-img {
+            display: block;
+            margin: 0 auto 0;
+            max-width: 90%;
+        }
+
+        div.yettel-cube>div:nth-child(2)>img.cube-img,
+        div.yettel-cube>div:nth-child(4)>img.cube-img {
+            transform: rotateY(180deg);
+        }
+
+        div.tc-info-box {
+            gap: 12px;
+            width: 75%;
+        }
+
+        div.tc-info-box h3.vid-head {
+            font-size: 18px;
+            margin: 0;
+        }
+
+        /*CUBE + BANNER CSS END*/
+
+
+
+        ul.tc-box-list {
+            list-style: square;
+            padding: 0 0 0 24px;
+        }
+
+        ul.tc-box-list li {
+            font-size: 14px;
+            line-height: 18px;
+            margin: 0 0 8px 0;
+            color: #002340;
+            font-family: 'yettel-light';
+            font-weight: 100;
+        }
+
+        ul.tc-box-list li:last-of-type {
+            margin: 0 0 0 0;
+        }
+
+        a.find-em {
+            background-color: inherit;
+            outline: none;
+            cursor: pointer;
+            text-decoration: none !important;
+            width: 100%;
+            font-size: 18px;
+            gap: 12px;
+            font-family: 'yettel-regular';
+            /* border: 1px solid #002340; */
+            border-right: none;
+        }
+
+        button#cptlBtn {
+            border-right: 1px solid #002340;
+        }
+
+        /* MOBILE */
+        @media only screen and (max-width: 1024px) {
+            .bm-50 {
+                margin: 0 0 35px 0;
+            }
+
+            div.cube-banner-inf-box h1.top-head-sw {
+                font-size: 30px;
+                line-height: 36px;
+            }
+
+            div.cube-banner p {
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            img.tc-img {
+                /* margin: 0 auto; */
+                width: 100%;
+                height: auto;
+            }
+
+            div#capTelco-sw img.tc-img {
+                width: auto;
+            }
+
+            div#izzi-sw iframe {
+                height: 250px;
+            }
+
+            div.inside-cont h1 {
+                font-size: 32px;
+                line-height: 38px;
+            }
+
+            div.inside-cont h2 {
+                font-size: 24px;
+                line-height: 30px;
+            }
+
+            div.inside-cont h3.tab-head,
+            div.inside-cont h3.hbo-right-head {
+                font-size: 20px;
+                line-height: 26px;
+            }
+
+            div.inside-cont h4 {
+                font-size: 18px;
+                line-height: 24px;
+            }
+
+            div.inside-cont p {
+                font-size: 14px;
+                line-height: 18px;
+            }
+
+            .f-ctnr-col {
+                flex-direction: column;
+            }
+
+            div.sw-tab {
+                flex-direction: column;
+                gap: 12px;
+                padding: 0 0 12px 0;
+            }
+
+
+            .sw-tab button.tablinks-sw.bookmate-but:active div.sw-tab,
+            .sw-tab button.tablinks-sw.bookmate-but:focus div.sw-tab,
+            .sw-tab button.tablinks-sw.bookmate-but:focus-within div.sw-tab {
+                background-color: #c9dfe4;
+            }
+
+            .sw-tab button.tablinks-sw {
+                width: 100%;
+                /*flex-direction: column;*/
+                font-size: 22px;
+                line-height: 24px;
+                padding: 20px 4px;
+                /*justify-content: flex-start;*/
+            }
+
+            div.tc-sug-ctnr,
+            div.tc-how-to-ctnr,
+            div.tc-box,
+            div#capTelco-sw>div.props-ctnr>div.tc-how-to-ctnr,
+            div.tc-info-box,
+            div.tc-img-box {
+                width: 100%;
+            }
+
+            button.activate-now {
+                font-size: 16px;
+                padding: 8px 16px;
+            }
+
+            div.tc-ctnr {
+                flex-direction: column-reverse;
+            }
+
+            h3.tab-head.inth {
+                display: block;
+            }
+
+            h3.tab-head.exh {
+                display: none;
+            }
+
+            h4.tc-par {
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            div#capTelco-sw>div.props-ctnr>div.tc-ctnr>div.tc-sug-ctnr>div.tc-box {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+            }
+
+            div#capTelco-sw>div.props-ctnr>div.tc-ctnr>div.tc-sug-ctnr>div.tc-box>img.tc-img {
+                width: 100%;
+                height: 54px;
+            }
+
+            div#capTelco-sw>div.props-ctnr>div.tc-ctnr>div.tc-sug-ctnr>div.tc-box>a>h4.tc-par {
+                text-align: center;
+                font-size: 16px;
+                line-height: 20px;
+            }
+
+            div#bookmate-sw>div.props-ctnr>div.tc-ctnr>div.tc-sug-ctnr>div.tc-box {
+                align-items: center;
+                justify-content: center;
+            }
+
+            div#bookmate-sw>div.props-ctnr h4.new-suggestions,
+            div#capTelco-sw>div.props-ctnr>div.tc-ctnr>div.tc-sug-ctnr>div.tc-box>a>h4.tc-par {
+                text-align: center;
+            }
+
+            div#capTelco-sw>div.props-ctnr>div.tc-ctnr {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            div.cube-banner {
+                flex-direction: column-reverse;
+                gap: 144px;
+                margin: 0 0 6vh 0;
+            }
+
+            div.yettel-cube-ctnr {
+                top: 86px;
+            }
+
+            div.cube-banner-info-ctnr {
+                width: 100%;
+            }
+
+            div.tc-box.f-ctnr {
+                flex-direction: column;
+                border-bottom: 1px solid #002340;
+                padding: 0 0 16px 0;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .sw-tab button.tablinks-sw {
+                height: auto;
+                border-right: 1px solid #002340;
+            }
+        }
+    </style>
+
+    <div class="cube-banner f-ctnr-col">
+        <div class="cube-banner-info-ctnr f-ctnr-col">
+            <div class="cube-banner-inf-box f-col-start">
+                <h1 class="top-head-sw">Дигитални услуги<br> за всеки от семейството</h1>
+                <p>Музика, електронни книги, филми и бизнес новини – има за всекиго по нещо</p>
+            </div>
+        </div>
+        <div class="yettel-cube-ctnr f-ctnr">
+            <div class="top-cube f-col" id="cubeRoof">
+
+                <img src="https://www.yettel.bg/dA/a3cc479c04/asset/max_roof_cube.png" alt="Image 1" class="active">
+                <img src="https://www.yettel.bg/sites/default/files/deezer-roof.png" alt="Image 2">
+                <img src="https://www.yettel.bg/sites/default/files/kap-roof.png" alt="Image 3">
+                <img src="https://www.yettel.bg/sites/default/files/bookmate-roof.png" alt="Image 4">
+                <img src="https://www.yettel.bg/sites/default/files/izzi-roof.png" alt="Image 5">
+
+            </div>
+            <div class="yettel-cube">
+                <div style="--i:0;" class="f-ctnr"><img
+                        src="/dA/7baf826ebc/asset/max_white.png" class="cube-img">
+                </div>
+                <div style="--i:1;" class="f-ctnr"><img
+                        src="https://www.yettel.bg/sites/default/files/deezer_logo_rvb_black_1.png" class="cube-img">
+                </div>
+                <div style="--i:2;" class="f-ctnr"><img
+                        src="https://www.yettel.bg/sites/default/files/bookmate-logo-sw.png" class="cube-img">
+                </div>
+                <div style="--i:3;" class="f-ctnr"><img
+                        src="https://www.yettel.bg/sites/default/files/kapital-sw-tab.png" class="cube-img"></div>
+            </div>
+            <div class="cube-shadow"></div>
+        </div>
+    </div>
+    <div class="inside-cont o-sxtn">
+        <!-- CONTENT WRAPPER -->
+
+        <div class="intro-ctnr f-col-start bm-6">
+            <h1 class="top-head-sw m-zero">Няма нужда да търсиш повече.</h1>
+            <p class="m-zero">Избираш план Total Unlimited с позиции за дигитални услуги без допълнително заплащане до 12 месеца и вече никога не ти е скучно.
+</p>
+        </div>
+
+        <div class="sw-tab f-ctnr">
+            <a href="#maxcontent" class="find-em"><button class="tablinks-sw f-ctnr hbo-but active"
+                    onclick="digitalServices(event, 'hbo-sw')" id="hboBtn"><img
+                        src="/dA/05912323c9/asset/max_black.png"
+                        class="img-responsive ds-logo">-
+                    филми</button></a>
+            <a href="#storytelcontent" class="find-em"><button class="tablinks-sw f-ctnr stt-but"
+                    onclick="digitalServices(event, 'stt-sw')" id="sttBtn"><img
+                        src="/dA/1a55e13f68/asset/storytel-logo-black.png"
+                        class="img-responsive ds-logo">-
+                    аудиокниги</button></a>
+            <a href="#deezercontent" class="find-em"><button class="tablinks-sw f-ctnr deezer-but"
+                    onclick="digitalServices(event, 'deezer-sw')" id="deezerBtn"><img
+                        src="https://www.yettel.bg/sites/default/files/deezer_logo_rvb_black_1.png"
+                        class="img-responsive ds-logo deezer-logo-img">- музика</button></a>
+
+            <a href="#bookmatecontent" class="find-em"><button class="tablinks-sw f-ctnr bookmate-but"
+                    onclick="digitalServices(event, 'bookmate-sw')" id="bookmateBtn"><img
+                        src="https://www.yettel.bg/sites/default/files/bookmate-logo-sw.png"
+                        class="img-responsive ds-logo">- книги</button></a>
+            <a href="#izzicontent" class="find-em"><button class="tablinks-sw f-ctnr izzi-but"
+                    onclick="digitalServices(event, 'izzi-sw')" id="izziBtn"><img
+                        src="https://www.yettel.bg/sites/default/files/izzi-logo-transparent.svg"
+                        class="img-responsive ds-logo izzi-logo">
+                    - учене</button></a>
+            <a href="#capcontent" class="find-em"><button class="tablinks-sw f-ctnr cap-but"
+                    onclick="digitalServices(event, 'capTelco-sw')" id="cptlBtn"><img
+                        src="https://www.yettel.bg/sites/default/files/kapital-sw-tab.png"
+                        class="img-responsive ds-logo k-telco-logo">
+                    - бизнес</button></a>
+
+        </div>
+        <div class="tab-ctnr">
+            <div id="hbo-sw" class="tabcontent-sw f-col" style="display: flex; z-index:9;">
+                <a id="maxcontent"></a>
+                <div class="tab-info f-col-start">
+                    <h3 class="tab-head m-zero">Max</h3>
+                    <p class="tab-par m-zero"><a href="/uslugi/digitalni/max?ref=ds-promo">Max</a> е онлайн услуга за видео
+                        стрийминг. Благодарение на нея и нашата <a href="/5g?ref=ds-promo">5G
+                            мрежа</a> ще можеш да се насладиш на филми и сериали с високо качество.</p>
+                    <p class="tab-par m-zero">Достъпът до съдържание сега е по-лесен, по-бърз и според твоя личен вкус.
+                        Ако се абонириаш за план с включен достъп до позиции за дигитални услуги, ще можеш да ползваш MAX без допълнително заплащане до 12 месеца. 
+                    </p>
+                </div>
+                <div class="props-ctnr f-col-start">
+                    <h3 class="tab-head exh m-zero">Популярни заглавия от MAX:</h3>
+                    <div class="tc-ctnr f-ctnr-col">
+                        <div class="tc-sug-ctnr f-col-start">
+                            <h3 class="tab-head inth m-zero">Популярни заглавия от MAX:</h3>
+                            <div class="tc-box f-ctnr">
+                                <div class="tc-img-box">
+                                    <img src="https://www.yettel.bg/sites/default/files/whitney-houston-ds-page.png"
+                                        class="img-responsive tc-img">
+                                </div>
+                                <div class="tc-info-box f-col-start">
+
+                                    <a href="https://www.youtube.com/watch?v=0xpmZQflYPg&ab_channel=HBOMaxBulgaria">
+                                        <h4 class="tc-par">I Wanna Dance with Somebody: Филмът за Уитни Хюстън</h4>
+                                    </a>
+                                    <p class="tc-info-par m-zero">Емоционален филм, посветен на живота и творчеството на
+                                        Уитни Хюстън – една от най-великите певици на всички времена. С участието на
+                                        Наоми Аки в главната роля.</p>
+                                    <!-- <p class="tc-info-par m-zero">Шазам и семейството му, са въвлечени в опасна битка,
+                                        за да спасят суперсилите си, живота си и съдбата на света.</p> -->
+                                </div>
+                            </div>
+
+                            <div class="tc-box f-ctnr">
+                                <div class="tc-img-box">
+                                    <img src="https://www.yettel.bg/sites/default/files/lakers-dynasty-ds-page.png"
+                                        class="img-responsive tc-img">
+                                </div>
+                                <div class="tc-info-box f-col-start">
+                                    <a href="https://www.hbomax.com/bg/bg/series/urn:hbo:series:GYbDO6QFHOsPCwgEAAAMR">
+                                        <h4 class="tc-par">Възходът на династията "Лейкърс" ІІ</h4>
+                                    </a>
+                                    <p class="tc-info-par m-zero">Невероятната истинска история за ерата на Лос Анджелис
+                                        Лейкърс – отбор, който дефинира НБА и културата през 80-те години.</p>
+                                    <!--<p class="tc-info-par m-zero">Егил “Бъд” Крог и Матю Крог от екипа
+                                        на Никсън, са наети да се грижат той да запази поста си на президент, вместо
+                                        това с поредица от действия съсипват кариерата на държавния глава.</p>-->
+                                </div>
+                            </div>
+
+
+                            <div class="tc-box f-ctnr" style="display: none;">
+                                <div class="tc-img-box">
+                                    <img src="https://www.yettel.bg/sites/default/files/spy1x1hbomax1.png"
+                                        class="img-responsive tc-img">
+                                </div>
+                                <div class="tc-info-box f-col-start">
+
+                                    <a href="https://www.youtube.com/watch?v=zXhX1xTssQo&ab_channel=HBOMaxBulgaria">
+                                        <h4 class="tc-par">Шпионин сред приятели</h4>
+                                    </a>
+                                    <ul class="tc-box-list">
+                                        <li>01.01.2023 | max
+                                        </li>
+                                        <li>
+                                            <strong>С участието на:</strong> Деймиън Луис, Гай Пиърс, Анна Максуел
+                                            Мартин и др.
+                                        </li>
+                                        <li><strong>Режисьор:</strong> Деймиън Люис</li>
+                                    </ul>
+                                    <p class="tc-info-par m-zero">Поредицата от шест епизода драматизира истинската
+                                        история на Никълъс Елиът (Деймиън Люис) и Ким Филби (Гай Пиърс), двама британски
+                                        шпиони и приятели за цял живот. </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tc-how-to-ctnr f-col-start">
+                            <h3 class="hbo-right-head">Влез в света на киното с Max.</h3>
+                            <p class="hbo-how-to-par">Активирай Max в позиция или като допълнителен пакет.</p>
+                            <a href="/uslugi/digitalni/max#hbo-act"><button class="activate-now">Виж как да
+                                    активираш</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="stt-sw" class="tabcontent-sw f-col" style="display: none;">
+                <a id="maxcontent"></a>
+                <div class="tab-info f-col-start">
+                    <h3 class="tab-head m-zero">Storytel</h3>
+                    <p class="tab-par m-zero"><a href="/uslugi/digitalni/storytel?ref=ds-page">Storytel</a> Storytel е
+                        една от най-големите стрийминг услуги за аудиокниги и е-книги с абонамент в света.</p>
+                    <p class="tab-par m-zero">Чуй любими класики или открий нови бестселъри. Със Storytel четеш повече.
+                    </p>
+                </div>
+                <div class="props-ctnr f-col-start">
+                    <h3 class="tab-head exh m-zero">Популярни заглавия от Storytel:</h3>
+                    <div class="tc-ctnr f-ctnr-col">
+                        <div class="tc-sug-ctnr f-col-start">
+                            <h3 class="tab-head inth m-zero">Популярни заглавия от Storytel:</h3>
+                            <div class="tc-box f-ctnr">
+                                <div class="tc-img-box">
+                                    <img src="https://covers.storytel.com/jpg-640/9789180847797.7729cbb6-c3e3-45ca-8be1-9b674926c935?optimize=high&quality=70"
+                                        class="img-responsive tc-img">
+                                </div>
+                                <div class="tc-info-box f-col-start">
+
+                                    <a
+                                        href="https://www.storytel.com/bg/books/%D0%B0%D0%BB%D1%85%D0%B8%D0%BC%D0%B8%D0%BA%D1%8A%D1%82-2672159">
+                                        <h4 class="tc-par">Алхимикът</h4>
+                                    </a>
+                                    <p class="tc-info-par m-zero">Смайваща със своята неподправена простота и окриляваща
+                                        мъдрост, тази история разказва за
+                                        пастира Сантяго, който тръгва от родната си Испания към египетската пустиня, за
+                                        да търси съкровище, заровено до Пирамидите.</p>
+                                    <!-- <p class="tc-info-par m-zero">Шазам и семейството му, са въвлечени в опасна битка,
+                                        за да спасят суперсилите си, живота си и съдбата на света.</p> -->
+                                </div>
+                            </div>
+
+                            <div class="tc-box f-ctnr">
+                                <div class="tc-img-box">
+                                    <img src="https://covers.storytel.com/jpg-640/9786190213147.58540437-bab8-45e9-a6fb-b0b4869dd132?optimize=high&quality=70"
+                                        class="img-responsive tc-img">
+                                </div>
+                                <div class="tc-info-box f-col-start">
+                                    <a href="https://www.hbomax.com/bg/bg/series/urn:hbo:series:GYbDO6QFHOsPCwgEAAAMR">
+                                        <h4 class="tc-par">Норвежка гора</h4>
+                                    </a>
+                                    <p class="tc-info-par m-zero">С този изумителен елегичен роман, изпълнен с мистерия,
+                                        мистицизъм, сюрреализъм, секс и рокендрол, ексцентричният майстор на смесения
+                                        жанр Мураками доказва, че може да играе по струните на нашата душевност със
+                                        същия успех, както и Бийтълс с тяхната песен „Норвежка гора“.</p>
+                                    <!--<p class="tc-info-par m-zero">Егил “Бъд” Крог и Матю Крог от екипа
+                                        на Никсън, са наети да се грижат той да запази поста си на президент, вместо
+                                        това с поредица от действия съсипват кариерата на държавния глава.</p>-->
+                                </div>
+                            </div>
+
+
+                            <div class="tc-box f-ctnr" style="display: none;">
+                                <div class="tc-img-box">
+                                    <img src="https://www.yettel.bg/sites/default/files/spy1x1hbomax1.png"
+                                        class="img-responsive tc-img">
+                                </div>
+                                <div class="tc-info-box f-col-start">
+
+                                    <a href="https://www.youtube.com/watch?v=zXhX1xTssQo&ab_channel=HBOMaxBulgaria">
+                                        <h4 class="tc-par">Шпионин сред приятели</h4>
+                                    </a>
+                                    <ul class="tc-box-list">
+                                        <li>01.01.2023 | max
+                                        </li>
+                                        <li>
+                                            <strong>С участието на:</strong> Деймиън Луис, Гай Пиърс, Анна Максуел
+                                            Мартин и др.
+                                        </li>
+                                        <li><strong>Режисьор:</strong> Деймиън Люис</li>
+                                    </ul>
+                                    <p class="tc-info-par m-zero">Поредицата от шест епизода драматизира истинската
+                                        история на Никълъс Елиът (Деймиън Люис) и Ким Филби (Гай Пиърс), двама британски
+                                        шпиони и приятели за цял живот. </p>
+                                </div>#
+                            </div>
+                        </div>
+
+                        <div class="tc-how-to-ctnr f-col-start">
+                            <h3 class="hbo-right-head">Влез в света на аудиокнигите със Storytel.</h3>
+                            <p class="hbo-how-to-par">Активирай Storytel в позиция или като допълнителен пакет.</p>
+                            <a href="/uslugi/digitalni/storytel#how-to-act"><button class="activate-now">Виж как да
+                                    активираш</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="deezer-sw" class="tabcontent-sw f-col" style="display: none">
+                <a id="deezercontent"></a>
+                <div class="tab-info f-col-start">
+                    <h3 class="tab-head m-zero">deezer</h3>
+                    <p class="tab-par m-zero"><strong><a
+                                href="/bg/digital-services/deezer?ref=ds-promo">deezer</a></strong>
+                        е музикална
+                        стрийминг
+                        услуга, която ти позволява да слушаш любимата музика, докато си в движение или просто релаксираш
+                        вкъщи. С deezer имаш достъп до повече от 90 милиона песни, включително и български.</p>
+                </div>
+                <div class="props-ctnr f-col-start">
+                    <h3 class="tab-head exh m-zero">Популярни плейлисти от Deezer:</h3>
+                    <div class="tc-ctnr f-ctnr-col">
+
+                        <div class="tc-sug-ctnr f-col-start">
+                            <h3 class="tab-head inth m-zero">Популярни плейлисти от Deezer:</h3>
+
+
+
+                            <div class="tc-box f-ctnr">
+                                <div class="tc-img-box">
+                                    <img src="https://e-cdns-images.dzcdn.net/images/playlist/ccc52e8a3f788304b3faac585f7c529a/264x264-000000-80-0-0.jpg"
+                                        class="img-responsive tc-img">
+                                </div>
+                                <div class="tc-info-box f-col-start">
+
+                                    <a href="https://www.deezer.com/us/playlist/10361569942">
+                                        <h4 class="tc-par">Summer
+                                            vibes</h4>
+                                    </a>
+                                    <ul class="tc-box-list">
+                                        <li>Dua Lipa</li>
+                                        <li>Trinix, Fafá De Belém</li>
+                                        <li>Becky G, Omega</li>
+                                        <li>Lizzo</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="tc-box f-ctnr">
+
+                                <div class="tc-img-box">
+                                    <img src="https://e-cdns-images.dzcdn.net/images/playlist/e37ce493bc61dcd4d5e389d7ea0642db/264x264-000000-80-0-0.jpg"
+                                        class="img-responsive tc-img" class="img-responsive tc-img">
+                                </div>
+                                <div class="tc-info-box f-col-start">
+
+                                    <a href="https://www.deezer.com/en/playlist/1724212365">
+                                        <h4 class="tc-par">Strictly the best 90s rap songs from the golden era.</h4>
+                                    </a>
+                                    <ul class="tc-box-list">
+                                        <li>2Pac</li>
+                                        <li>Dr. Dre</li>
+                                        <li>The Notorious B.I.G.</li>
+                                        <li>OutKast</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div class="tc-box f-ctnr">
+
+                                <div class="tc-img-box">
+                                    <img src="https://e-cdns-images.dzcdn.net/images/playlist/5c42c879c292c5c1b6dc2b165b08462c/264x264-000000-80-0-0.jpg"
+                                        class="img-responsive tc-img" class="img-responsive tc-img">
+                                </div>
+                                <div class="tc-info-box f-col-start">
+
+                                    <a href="https://www.deezer.com/en/playlist/10223308762">
+                                        <h4 class="tc-par">Summer Deep House 2023</h4>
+                                    </a>
+                                    <p class="tc-info-par m-zero">Deep Vibes, Deep Music</p>
+                                    <ul class="tc-box-list">
+                                        <li>Peggy Gou</li>
+                                        <li>Kaaze</li>
+                                        <li>Diplo, Miguel</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tc-how-to-ctnr f-col-start">
+                            <h3 class="hbo-right-head">Добави саундтрак към всеки един момент с deezer.</h3>
+                            <!-- <p class="hbo-how-to-par">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                            <a href="/uslugi/digitalni/deezer#deezer-act"><button class="activate-now">Виж как да
+                                    активираш</button></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="bookmate-sw" class="tabcontent-sw f-col" style="display: none">
+                <a id="bookmatecontent"></a>
+                <div class="tab-info f-col-start">
+                    <h3 class="tab-head m-zero">Bookmate</h3>
+                    <p class="tab-par m-zero"><strong><a
+                                href="/bg/digital-services/bookmate?ref=ds-promo">Bookmate</a></strong> е най-лесният
+                        начин да си откраднеш време за теб навсякъде и по всяко време. С мобилното приложение четеш и
+                        слушаш книги дори и офлайн.</p>
+                </div>
+
+                <div class="props-ctnr f-col-start">
+                    <h3 class="tab-head exh m-zero">Популярни заглавия от Bookmate този месец:</h3>
+                    <div class="tc-ctnr f-ctnr-col">
+
+                        <div class="tc-sug-ctnr f-col-start">
+                            <h3 class="tab-head inth m-zero">Популярни заглавия от Bookmate този месец:</h3>
+
+
+
+                            <div class="tc-box f-ctnr">
+                                <div class="tc-img-box">
+                                    <img src="https://assets1.bmstatic.com/assets/books-covers/8d/6d/B1vMYFze-ipad.jpeg?image_hash=02f80fd04d1fa5bec08fbffc1745ace6"
+                                        class="img-responsive tc-img">
+                                </div>
+                                <div class="tc-info-box f-col-start">
+
+                                    <a href="https://bg.bookmate.com/books/B1vMYFze">
+                                        <h4 class="tc-par">Кралицата на шампанското</h4>
+                                    </a>
+                                    <p class="tc-info-par m-zero">Вълнуващата история зад шампанско «Вьов Клико» и
+                                        желязната бизнес дама, която го превръща в искряща легенда</p>
+                                    <p class="tc-info-par m-zero">Наричана първата бизнес дама на своето време, Барби
+                                        Клико признава само едно качество за своето шампанско — най-доброто. Тя открива
+                                        метода ремюаж и първа създава шампанско, чисто като сълза.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="tc-box f-ctnr">
+
+                                <div class="tc-img-box">
+                                    <img src="https://assets1.bmstatic.com/assets/books-covers/e8/18/hQzkNbqJ-ipad.jpeg?image_hash=c41122ef093f1d2f8f31bc7bf2fc6555"
+                                        class="img-responsive tc-img" class="img-responsive tc-img">
+                                </div>
+                                <div class="tc-info-box f-col-start">
+
+                                    <a href="https://bg.bookmate.com/books/hQzkNbqJ">
+                                        <h4 class="tc-par">Социалната мрежа в природата</h4>
+                                    </a>
+                                    <p class="tc-info-par m-zero">Природата крие неподозирани изненади!</p>
+                                    <p class="tc-info-par m-zero">Най-популярният немски лесовъд Петер Волебен ни потапя
+                                        в любопитния свят на природата и описва удивителното взаимодействие между
+                                        растения и животни.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="tc-box f-ctnr">
+
+                                <div class="tc-img-box">
+                                    <img src="https://assets1.bmstatic.com/assets/books-covers/83/94/tRkZEnUe-ipad.jpeg?image_hash=9e6352aa90794fb3bdaff3e78c608064"
+                                        class="img-responsive tc-img" class="img-responsive tc-img">
+                                </div>
+                                <div class="tc-info-box f-col-start">
+
+                                    <a href="https://bg.bookmate.com/books/tRkZEnUe">
+                                        <h4 class="tc-par">Снежна слепота</h4>
+                                    </a>
+                                    <p class="tc-info-par m-zero">Тесен планински тунел е единственият начин да се
+                                        стигне до Сиглюфьордюр — идилично рибарско градче в най-северните части на
+                                        Исландия, където хората не заключват вратите си, а животът има собствен ритъм.
+                                        Новото попълнение в полицейския участък там е младият полицай Ари Тор Арасон.
+                                    </p>
+                                    <p class="tc-info-par m-zero">Идилията е разрушена, когато млада жена е открита в
+                                        безсъзнание в снега, а известен писател среща смъртта при мистериозни
+                                        обстоятелства.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tc-how-to-ctnr f-col-start">
+                            <h3 class="hbo-right-head">Дигитална библиотека в джоба ти.</h3>
+                            <p class="hbo-how-to-par">Бягство от реалността само на няколко клика от теб. Абонирай се и
+                                чети нови издания, биографии, фентъзи и криминални романи.</p>
+                            <a href="/uslugi/digitalni/bookmate#bookmate-act"><button class="activate-now">Виж как да
+                                    активираш</button></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="izzi-sw" class="tabcontent-sw f-col" style="display: none">
+                <a id="izzicontent"></a>
+                <div class="tab-info f-col-start">
+                    <h3 class="tab-head m-zero">iZZI</h3>
+                    <p class="tab-par m-zero"><a href="/bg/digital-services/izzi?ref=ds-promo">iZZI</a> е модерна и
+                        иновативна
+                        образователна среда, която събира в себе си над 50 000 ресурса, над 130 учебника и повече от 30
+                        000 интерактивни задачи, игри и симулации. iZZI е нов подход към преподаването на учебен
+                        материал, който отговаря на очакванията и изискванията на стандартите за образование на деца.
+                    </p>
+                </div>
+
+                <div class="props-ctnr f-col-start">
+                    <h3 class="tab-head exh m-zero">В iZZI ще намерите уникални образователни видеа</h3>
+                    <div class="tc-ctnr f-ctnr-col">
+
+                        <div class="tc-sug-ctnr f-col-start">
+                            <h3 class="tab-head inth m-zero">В iZZI ще намерите уникални образователни видеа</h3>
+
+
+
+                            <div class="tc-box f-ctnr">
+                                <div class="tc-info-box f-col-start">
+                                    <h3 class="vid-head m-zero">Колко е стара математиката?</h3>
+                                    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/z6w1jhMtFCo"
+                                        title="Bitesize Math HowOldIsMaths Master" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+
+
+                            <div class="tc-box f-ctnr">
+                                <div class="tc-info-box f-col-start">
+                                    <h3 class="vid-head m-zero">N761</h3>
+                                    <iframe width="100%" height="400px" src="https://www.youtube.com/embed/ByRv5cpmj10"
+                                        title="Bitesize Math HowOldIsMaths Master" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tc-how-to-ctnr f-col-start">
+                            <h3 class="hbo-right-head">Образователна среда от ново поколение. </h3>
+                            <p class="hbo-how-to-par">Цифрово учебно съдържание, което допълва одобрените от МОН печатни
+                                учебници. Подходящо за ученици, учители и родители.</p>
+                            <a href="/uslugi/digitalni/izzi#izzi-act"><button class="activate-now">Виж как да
+                                    активираш</button></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="capTelco-sw" class="tabcontent-sw f-col" style="display: none">
+                <a id="capcontent"></a>
+                <div class="tab-info f-col-start">
+                    <h3 class="tab-head m-zero">Капитал</h3>
+                    <p class="tab-par m-zero"><strong><a
+                                href="/uslugi/digitalni/kapital?ref=ds-page">Капитал</a></strong> е българско
+                        издание за бизнес, икономика и политика. Предназначено за предприемачи, професионалисти,
+                        експерти и граждани с позиция. Капитал селектира най-важните събития и обяснява какво се случва,
+                        защо се случва и какво следва. Капитал дава фактите компетентно и точно, представя аргументирана
+                        позиция, за да може информацията да е полезна за вземането на информирани решения за бизнеса или
+                        личния просперитет.</p>
+                </div>
+                <div class="props-ctnr f-col-start">
+                    <h3 class="tab-head exh m-zero">Популярно от Капитал</h3>
+                    <div class="tc-ctnr f-ctnr-col">
+
+                        <div class="tc-sug-ctnr f-col-start">
+                            <h3 class="tab-head inth m-zero">Популярно от Капитал</h3>
+
+
+
+                            <div class="tc-box f-ctnr">
+
+                                <div class="tc-img-box">
+                                    <img src="https://www.yettel.bg/sites/default/files/k1-kapital.png"
+                                        class="img-responsive tc-img" class="img-responsive tc-img">
+                                </div>
+                                <div class="tc-info-box f-col-start">
+
+                                    <a href="https://www.capital.bg/politika_i_ikonomika/">
+                                        <h4 class="tc-par">К1: Средата</h4>
+                                    </a>
+                                    <p class="tc-info-par m-zero">Най-актуалните новини, свързани с политика, икономика,
+                                        свят, право, данъци и осигуряване и още. </p>
+
+                                </div>
+                            </div>
+
+
+                            <div class="tc-box f-ctnr">
+
+                                <div class="tc-img-box">
+                                    <img src="https://www.yettel.bg/sites/default/files/k2-kapital.png"
+                                        class="img-responsive tc-img" class="img-responsive tc-img">
+                                </div>
+                                <div class="tc-info-box f-col-start">
+
+                                    <a href="https://www.capital.bg/biznes/">
+                                        <h4 class="tc-par">К2: Бизнесът</h4>
+                                    </a>
+                                    <p class="tc-info-par m-zero">Бизнес анализи и информация за компании, пазари, банки
+                                        и финанси, енергетика, ESG, строителство и други</p>
+
+                                </div>
+                            </div>
+
+                            <div class="tc-box f-ctnr">
+                                <div class="tc-img-box">
+                                    <img src="https://www.yettel.bg/sites/default/files/k3-kapital.png"
+                                        class="img-responsive tc-img">
+                                </div>
+                                <div class="tc-info-box f-col-start">
+
+                                    <a href="https://www.capital.bg/moiat_capital/deposits_credits">
+                                        <h4 class="tc-par">К3: Моят капитал</h4>
+                                    </a>
+                                    <p class="tc-info-par m-zero">Полезни теми за депозити, инвестиции, финансови
+                                        продукти, застраховане и осигуряване, криптовалути и имоти.</p>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="tc-how-to-ctnr f-col-start">
+                            <h3 class="hbo-right-head">Най-важните бизнес новини на едно място.</h3>
+                            <p class="hbo-how-to-par">Селекция и анализ на най-важните бизнес събития.</p>
+                            <a href="/uslugi/digitalni/kapital#activate"><button
+                                    class="activate-now">Виж
+                                    как да
+                                    активираш</button></a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- CONTENT WRAPPER -->
+    </div>
+
+    <script>
+
+        function digitalServices(evt, serviceName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent-sw");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.zIndex = "0";
+            }
+            tablinks = document.getElementsByClassName("tablinks-sw");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(serviceName).style.display = "flex";
+            document.getElementById(serviceName).style.zIndex = "9";
+            evt.currentTarget.className += " active";
+
+        }
+
+
+
+
+        var slideIndex = 0;
+        var slides = document.querySelectorAll('#cubeRoof img');
+
+        function showSlides() {
+            slideIndex++;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].classList.remove('active');
+            }
+
+            slides[slideIndex].classList.add('active');
+        }
+
+        setInterval(showSlides, 1500);
+    </script>
+</div>
